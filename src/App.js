@@ -9,17 +9,23 @@ import CashApp from './CashApp';
 import PayPal from './PayPal';
 import Venmo from './Venmo';
 import Header from './Header';
+import Confirmation from './Confirmation'; 
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
+      <BrowserRouter>
           <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cashapp" element={<CashApp />} />
-          <Route path="/PayPal" element={<PayPal />} />
-          <Route path="/Venmo" element={<Venmo />} />
-        </Routes>
-      </BrowserRouter>
+          <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cashapp" element={<CashApp />} />
+            <Route path="/paypal" element={<PayPal />} />
+            <Route path="/venmo" element={<Venmo />} />
+            <Route path="/confirmation" element={<Confirmation />} />
+          </Routes>
+        </BrowserRouter>
+        
   );
-};
+}
+
+export default App;
