@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
+    "react-app-env": "^1.2.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
     "react-scripts": "^5.0.1",
@@ -16,8 +17,8 @@
   "scripts": {
     "start": "react-scripts start --env PUBLIC_URL=/",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "npm run move-css && react-scripts build",
+    "deploy": "react-scripts build && gh-pages -d build -e REACT_APP_PAYPAL_CLIENT_ID"
+    "build": "npm run move-css && react-scripts build ",
     "move-css": "copy src\\index.css public\\index.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

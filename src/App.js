@@ -9,15 +9,15 @@ import CashApp from './CashApp';
 import PayPal from './PayPal';
 import Venmo from './Venmo';
 import Header from './Header';
-import Confirmation from './Confirmation'; 
+import Confirmation from './Confirmation';
+
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
           <Header />
-          <Home />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/sugar.me" element={<Home />} />
             <Route path="/cashapp" element={<CashApp />} />
             <Route path="/paypal" element={<PayPal />} />
             <Route path="/venmo" element={<Venmo />} />
