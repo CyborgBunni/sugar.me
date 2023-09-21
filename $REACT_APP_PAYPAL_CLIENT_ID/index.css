@@ -1,0 +1,205 @@
+body {
+  display: flex;
+  margin: auto;
+  min-height: 110vh;
+  min-width: 80vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+  text-align: center;
+}
+
+button {
+  margin: 5%;
+  border-radius: 4px;
+  min-width: max-content;
+  height: 10vh;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 70vh;
+  margin-left: 2.5vh;
+  min-height: 72vh;
+  background: cornsilk;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.cashapp-button{
+  background: #00c244; 
+  color: white;
+  width: 40vh;
+  
+}
+
+.confirmation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 70vh;
+  margin-left: 2.5vh;
+  min-height: 72vh;
+  background: cornsilk;
+}
+
+div{
+  min-width: -webkit-fill-available;
+}
+
+html{
+  background-image: url("/public/sugarbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vh;
+  height: 25vh;
+  margin-left: 2vw;
+}
+
+.paypal-button{
+  background: #003087;
+  color: white;
+  width: 40vh;
+}
+
+.venmo-button{
+  background: #3d95ce;
+  color: white;
+  width: 40vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.paypal-buttons-container .paypal-buttons .buttons {
+  max-width: 200px; /* Adjust the max-width as needed */
+}
+
+
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    margin: auto;
+    min-height: 110vh;
+    min-width: 80vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  button {
+    margin: 5%;
+    border-radius: 4px;
+    min-width: max-content;
+    height: 10vh;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 70vh;
+    margin: auto;
+    min-height: 72vh;
+    background: cornsilk;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+  .cashapp-button{
+    background: #00c244; 
+    color: white;
+    width: 40vh;
+    
+  }
+  
+  .confirmation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 70vh;
+    margin: auto;
+    min-height: 72vh;
+    background: cornsilk;
+  }
+  
+  div{
+    min-width: -webkit-fill-available;
+  }
+  
+  html{
+    background-image: url("/public/sugarbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow-y: hidden;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vh;
+    height: 25vh;
+    margin-left: 2vw;
+  }
+  
+  .paypal-button{
+    background: #003087;
+    color: white;
+    width: 40vh;
+  }
+  
+  .venmo-button{
+    background: #3d95ce;
+    color: white;
+    width: 40vh;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .paypal-buttons-container .paypal-buttons .buttons {
+    max-width: 200px; /* Adjust the max-width as needed */
+  }
+}
